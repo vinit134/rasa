@@ -392,6 +392,9 @@ class Story(object):
 
 
 class StoryGraph(object):
+    """The directed acyclic graph (DAG) of story-steps pooled from all the
+        stories present in the training data."""
+
     def __init__(
         self,
         story_steps: List[StoryStep],
